@@ -1,0 +1,128 @@
+/*
+#393B3B for Black
+#EBE4D1 for White
+#FFCD00 for Yellow
+#9A8B58 for Yellow Accent
+*/
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../etc/NotoSans-Regular.ttf");
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background: #EBE4D1;
+    color: #393B3B;
+    margin: 0;
+    font-size: 16px;
+    text-align: justify;
+}
+
+header {
+    background-image: url("../images/heroimg.png");
+    background-size: contain;
+    box-sizing: content-box;
+    margin: 0;
+    width: 100%;
+}
+
+#banner-text, #banner-subtext {
+    text-shadow: 2px 2px;
+    margin: 0;
+    box-sizing: content-box;
+    background: rgba(235, 228, 209, 0.7);
+}
+
+#banner-text {
+    font-size: 64px;
+    padding: 3% 3% 0 3%;
+}
+
+#banner-subtext {
+    font-size: 32px;
+    padding-bottom: 3%;
+}
+
+main {
+    margin: 1%;
+    box-sizing: content-box;
+    float: left;
+    width: 83%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin: 10% 0;
+}
+
+nav {
+    box-sizing: content-box;
+    height: 100%;
+    margin: 1% 0;
+    width: 15%;
+    float: left;
+    background: #FFCD00;
+    padding-bottom: 60%;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 10%;
+    background: #9A8B58;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 1% 0;
+}
+
+a:link {
+    color: #393B3B;
+}
+
+a:hover {
+    color: #EBE4D1;
+}
+
+a:visited {
+    color: #9A8B58;
+}
+
+#copyright {
+    font-style: italic;
+}
+
+section {
+    float: left;
+    text-align: center;
+}
+
+.section-3 {
+    width: 33%;
+}
+
+.section-2 {
+    width: 50%;
+}
+
+.center-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-float {
+    clear: both;
+}
+
+h2 {
+    padding: 3% 0;
+}
+
+.center-text {
+    text-align: center;
+}
