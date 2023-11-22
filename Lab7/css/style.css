@@ -1,0 +1,186 @@
+body {
+    font-family:Verdana, Arial, sans-serif;
+    background-color: #00005D;
+    margin: 0;
+}
+
+#wrapper {
+    background-color: #b3c7e6;
+    margin: 0;
+    min-width: auto;
+}
+
+header {
+    background-color: #869dc7;
+    color: #00005D;
+    background-image: url(../images/lighthouselogo.jpg);
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 155px;
+    max-height: 130px;
+    height: auto;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+nav {
+    letter-spacing:0.1em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    background-color: #869dc7;
+    border-bottom: 1px solid #ffffff;
+    padding: 20px;
+}
+
+nav a:link {
+    color: #ffffff;
+}
+
+nav a:visited {
+    color: #eaeaea;
+}
+
+nav a:hover {
+    background-color: #eaeaea;
+    color: #869dc7;
+}
+
+#content {
+    background-color: #ffffff;
+    color: #000000;
+    overflow: auto;
+    min-width: 75%;
+}
+
+h2 {
+    color: #869dc7;
+    font-family: arial, sans-serif;
+}
+
+footer {
+    font-size: 70%;
+    text-align: center;
+    background-color: #869dc7;
+    padding: 10px;
+}
+
+img {
+    margin: 10px;
+    max-width: 377px;
+    max-height: 255px;
+    width: auto;
+    height: auto;
+    display: none;
+}
+
+main {
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+@media only screen and (min-width: 761px) {
+    header {
+        font-size: 125%;
+    }
+
+    img {
+        display: grid;
+        margin: 15% 15% auto auto;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 3%;
+        padding: 2%;
+        place-content: center;
+    }
+
+    nav a {
+        text-align: center;
+        background-color: #e1b6ca;
+    }
+
+    #main-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+/*
+@media only screen and (min-width: 761px) {
+    header {
+        font-size: 125%;
+    }
+
+    img {
+        display: flex;
+    }
+
+    nav ul{
+        display: flex;
+        flex-flow: wrap;
+        place-content: center;
+        gap: 3%;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    nav a {
+        background-color: #e1b6ca;
+    }
+
+    #flex-container-2 {
+        display: flex;
+        flex-flow: row-reverse;
+    }
+
+    #flex-container-2 aside {
+        align-self: flex-end;
+
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    header {
+        font-size: 150%;
+    }
+
+    #flex-container-1 {
+        display: flex;
+    }
+
+    nav {
+        width: 25%;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+       padding-left: 1%;
+    }
+
+    nav ul, nav a {
+        display: block;
+    }
+}
+ */
