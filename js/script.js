@@ -8,7 +8,7 @@ function $(selector) {
 // Create a DOMcontentLoaded event listener for contact-us.html
 function contact_script() {
     // Create form validation for the form in contact-us.html
-    document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("DOMContentLoaded", e => {
         const form = $("#contact-form");
         const name = $("#name").value;
         const email = $("#email").value;
@@ -30,14 +30,14 @@ function contact_script() {
                 errorMessage += "Message is required.\n";
             }
 
-            form.onsubmit = () => {
-                if (errorMessage !== "") {
+            submit.addEventListener("click", ev => {
+                if (errorMessage.length > 0) {
                     alert(errorMessage);
+                    ev.preventDefault();
                 } else {
-                    alert("Thank you for your message. We will get back to you as soon as possible.");
-                    name.focus();
+                    alert("Message sent successfully!");
                 }
-            }
+            });
         });
     });
 }
