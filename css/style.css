@@ -183,7 +183,11 @@ input:invalid {
 textarea {
     width: 100%;
     resize: vertical;
-    margin-bottom: 5%;
+    margin-bottom: 0;
+}
+
+#submitBtn {
+    margin-top: 5%;
 }
 
 .button {
@@ -202,9 +206,15 @@ textarea {
     background-color: #9A8B58;
 }
 
-.error {
-    display: inline-block;
-    margin-left: 10px;
+.error-message {
     color: #e74c3c;
-    font-size: 16px;
+    font-size: 12px;
+    text-align: left;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 1%;
+}
+
+.error {
+    border-color: #e74c3c;
 }
