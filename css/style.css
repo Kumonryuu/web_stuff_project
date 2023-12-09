@@ -45,6 +45,15 @@ header {
     padding-bottom: 3%;
 }
 
+#banner-text-small {
+    text-shadow: 2px 2px;
+    margin: 0;
+    box-sizing: content-box;
+    background: rgba(235, 228, 209, 0.7);
+    font-size: 56px;
+    padding: 3% 3% 3% 3%;
+}
+
 main {
     margin: 1%;
     box-sizing: content-box;
@@ -67,7 +76,7 @@ nav {
     width: 15%;
     float: left;
     background: #FFCD00;
-    padding-bottom: 60%;
+    padding-bottom: 100%;
 }
 
 footer {
@@ -227,7 +236,7 @@ textarea {
 #top-navbar {
     text-align: center;
     color: #FFCD00;
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
     margin: 0;
 }
