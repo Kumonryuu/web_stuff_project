@@ -60,7 +60,6 @@ main {
     box-sizing: content-box;
     float: left;
     width: 83%;
-    min-height: 100vh;
 }
 
 nav ul {
@@ -73,7 +72,6 @@ nav li {
 
 nav {
     box-sizing: content-box;
-    min-height: 100vh;
     margin: 1% 0;
     width: 15%;
     float: left;
@@ -241,6 +239,7 @@ textarea {
     padding: 10px 0;
     width: 100%;
     margin: 0;
+    min-height: auto;
 }
 
 #top-navbar a {
