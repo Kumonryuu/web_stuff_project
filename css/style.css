@@ -18,6 +18,7 @@ body {
     margin: 0;
     font-size: 16px;
     text-align: justify;
+    height: 100%;
 }
 
 header {
@@ -59,6 +60,7 @@ main {
     box-sizing: content-box;
     float: left;
     width: 83%;
+    min-height: 100vh;
 }
 
 nav ul {
@@ -71,12 +73,12 @@ nav li {
 
 nav {
     box-sizing: content-box;
-    height: 100%;
+    min-height: 100vh;
     margin: 1% 0;
     width: 15%;
     float: left;
     background: #FFCD00;
-    padding-bottom: 100%;
+    padding-bottom: 100vh;
 }
 
 footer {
