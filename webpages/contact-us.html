@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js"></script>
     <link rel="icon" href="../images/favicon.ico">
+    <script src="../js/script.js"></script>
     <title>Contact Us</title>
 </head>
 <body id="contact-wrapper">
-<main id="contact-body">
-    <a href="../index.html" id="back-button">
-        <img src="../images/arrow.png" alt="Back to index" width="32px" height="32px">
-    </a>
+    <main id="contact-body">
+        <a href="../index.html" id="backBtn">
+            <img src="../images/arrow.png" alt="Back to index" width="32px" height="32px">
+        </a>
 
-    <h2>Contact us: </h2>
+        <h2>Contact us: </h2>
 
-    <form id="contact-form" novalidate>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <span id="name-error" class="error-message"></span>
+        <form id="contact-form" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span id="name-error" class="error-message"></span>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" pattern=".+\..+" required>
-        <span id="email-error" class="error-message"></span>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern=".+\..+" required>
+            <span id="email-error" class="error-message"></span>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <span id="message-error" class="error-message"></span>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span id="message-error" class="error-message"></span>
 
-        <input type="submit" value="Submit" class="button" id="submitBtn">
-    </form>
+            <input type="submit" value="Submit" class="button" id="submitBtn">
+        </form>
 
-    <p id="copy"> &copy; Goin' Bananas for Bananas 2023 </p>
-</main>
-<script>
-    contact_script();
-</script>
+        <p id="copy"> &copy; Goin' Bananas for Bananas 2023 </p>
+    </main>
+
+    <script>
+        contact_script();
+    </script>
 </body>
 </html>
 
