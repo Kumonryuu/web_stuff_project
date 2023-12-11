@@ -307,3 +307,17 @@ textarea {
 #checkout-button:hover, #clear-cart-button:hover {
     background-color: #9A8B58;
 }
+
+.cart-button {
+    float: right;
+    margin-left: -50%;
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
