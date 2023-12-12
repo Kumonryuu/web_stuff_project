@@ -53,11 +53,16 @@ $(document).ready(function() {
             popupContent = '<table><tr><th></th><th>Product</th><th>Quantity</th><th>Price</th><th>Total</th></tr>';
 
             for (let item in cartItems) {
-                popupContent += '<tr><td><img src="' + cartItems[item].image + '" width="50" height="50"></td><td>' + item + '</td><td><input type="number" min="0" class="item-quantity" data-item-name="' + item + '" value="' + cartItems[item].quantity + '"></td><td>$' + cartItems[item].price.toFixed(2) + '</td><td>$' + cartItems[item].totalPrice.toFixed(2) + '</td></tr>';
+                popupContent += '<tr><td><img src="' + cartItems[item].image + '" width="50" height="50"></td><td>' +
+                    item + '</td><td><input type="number" min="0" class="item-quantity" data-item-name="' + item +
+                    '" value="' + cartItems[item].quantity + '"></td><td>$' +
+                    cartItems[item].price.toFixed(2) + '</td><td>$' +
+                    cartItems[item].totalPrice.toFixed(2) + '</td></tr>';
                 subtotal += cartItems[item].totalPrice;
             }
 
-            popupContent += '<tr><td colspan="4">Subtotal</td><td>$' + subtotal.toFixed(2) + '</td></tr></table>';
+            popupContent += '<tr><td colspan="4">Subtotal</td><td>$' + subtotal.toFixed(2) +
+                '</td></tr></table>';
             popupContent += '<button class="checkout">Checkout</button>';
         }
 
