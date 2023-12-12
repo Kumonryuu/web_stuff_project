@@ -1,17 +1,11 @@
 $('.open-cart').magnificPopup({
     type:'inline',
     closeBtnInside: false,
-    midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+    midClick: true
 });
 
 $(document).ready(function() {
     let cartItems = {};
-
-    $(document).on('click', '.remove-item', function() {
-        const itemName = $(this).data('item-name');
-        delete cartItems[itemName];
-        updateCart();
-    });
 
     $(document).on('input', '.item-quantity', function() {
         const itemName = $(this).data('item-name');
