@@ -21,6 +21,10 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     background-image: url("../images/heroimg.png");
     background-size: contain;
