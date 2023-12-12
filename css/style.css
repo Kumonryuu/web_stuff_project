@@ -481,7 +481,8 @@ main img {
 }
 
 .small-image {
-    width: 50%;
+    max-width: 20%;
+    height: auto;
 }
 
 @media screen and (max-width: 760px) {
@@ -582,5 +583,10 @@ main img {
     #banner-text-small {
         font-size: 32px;
     }
+}
 
+@media screen and (max-width: 760px) and (orientation: portrait) {
+    .small-image {
+        display: none;
+    }
 }
