@@ -313,6 +313,13 @@ textarea {
     margin-left: -50%;
 }
 
+.cart-button img {
+    max-width: 24px;
+    max-height: 24px;
+    width: auto;
+    height: auto;
+}
+
 .white-popup .cart-item {
     display: flex;
     align-items: center;
@@ -445,30 +452,72 @@ p.cart-empty {
     text-align: center;
 }
 
+body.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.merch {
+    flex-direction: row;
+}
+
+.small-image {
+    width: 50%;
+}
+
 @media screen and (max-width: 760px) {
-    /* Stack navigation links vertically */
+    #banner-text-small {
+        font-size: 32px;
+    }
+
     #top-navbar a {
         display: block;
         padding: 10px;
+        clear: both;
     }
 
-    /* Stack product items vertically */
+    .cart-button {
+        float: none;
+        margin-left: 0;
+    }
+
     .product-item {
         width: 100%;
     }
 
-    /* Adjust font sizes */
     body {
         font-size: 14px;
     }
 
-    /* Make images responsive */
+    main p {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
     .product-item img {
         max-width: 100%;
         height: auto;
     }
 
-    /* Adjust popup width */
     .white-popup {
         width: 100% !important;
     }
@@ -480,8 +529,58 @@ p.cart-empty {
     .product-item {
         margin: auto;
     }
-}
 
-@media only screen and (max-width: 1024px) {
+    #contact-body {
+        width: 90%;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
+    #submitBtn, .button {
+        width: 100%;
+    }
+
+    #banner-text {
+        font-size: 32px;
+    }
+
+    #banner-subtext {
+        font-size: 16px;
+        text-shadow: none;
+    }
+
+    nav {
+        width: 100%;
+        padding-bottom: unset;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    nav li {
+        margin: 5% 0;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .section-3 {
+        width: 100%;
+    }
+
+    .section-2 {
+        width: 100%;
+    }
+
+    #banner-text-small {
+        font-size: 32px;
+    }
 
 }
