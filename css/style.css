@@ -533,6 +533,10 @@ main img {
         font-size: 32px;
     }
 
+    nav {
+        height: 15%;
+    }
+
     #top-navbar a {
         display: block;
         padding: 10px;
