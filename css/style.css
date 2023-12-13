@@ -33,30 +33,43 @@ header {
     width: 100%;
 }
 
+#header-logo {
+    width: 100px;
+    height: auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(235, 228, 209, 0.7);
+}
+
 #banner-text, #banner-subtext {
     text-shadow: 2px 2px;
     margin: 0;
     box-sizing: content-box;
-    background: rgba(235, 228, 209, 0.7);
 }
 
 #banner-text {
     font-size: 64px;
     padding: 3% 3% 0 3%;
+    margin-left: -5%;
 }
 
 #banner-subtext {
     font-size: 32px;
     padding-bottom: 3%;
+    margin-left: -5%;
 }
 
 #banner-text-small {
     text-shadow: 2px 2px;
-    margin: 0;
     box-sizing: content-box;
-    background: rgba(235, 228, 209, 0.7);
     font-size: 56px;
     padding: 3% 3% 3% 3%;
+    margin: 0 0 0 -5%;
 }
 
 main {
@@ -75,12 +88,22 @@ nav li {
 }
 
 nav {
-    box-sizing: content-box;
     margin: 1% 0;
     width: 15%;
+    height: 100vh;
     float: left;
     background: #FFCD00;
     padding-bottom: 100vh;
+}
+
+.body-image {
+    width: 300px;
+    height: auto;
+}
+
+.large-image {
+    width: 500px;
+    height: auto;
 }
 
 footer {
@@ -91,6 +114,20 @@ footer {
     box-sizing: content-box;
     margin: 0;
     padding: 1% 0;
+    text-align: center;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
 }
 
 a:link {
@@ -244,6 +281,7 @@ textarea {
     width: 100%;
     margin: 0;
     min-height: auto;
+    height: 15%;
 }
 
 #top-navbar a {
@@ -262,6 +300,7 @@ textarea {
 .product-item img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .product-item h3 {
@@ -549,11 +588,22 @@ main img {
 
     #banner-text {
         font-size: 32px;
+        margin: 0;
     }
 
     #banner-subtext {
         font-size: 16px;
         text-shadow: none;
+        margin: 0;
+    }
+
+    #banner-text-small {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    #header-logo {
+        display: none;
     }
 
     nav {
@@ -584,8 +634,8 @@ main img {
         width: 100%;
     }
 
-    #banner-text-small {
-        font-size: 32px;
+    #item-listing * {
+        text-align: center;
     }
 }
 
